@@ -1,1 +1,112 @@
-
+[
+  {
+    "id": 1,
+    "categoria": "Documentos",
+    "titulo": "Emitir a Carteira de Trabalho Digital",
+    "palavras_chave": ["carteira de trabalho", "ctps", "carteira digital", "trabalho"],
+    "resposta": "A Carteira de Trabalho Digital é emitida pelo aplicativo oficial do governo ou pelo site gov.br.",
+    "documentos": ["CPF", "Conta gov.br nível prata ou ouro"],
+    "onde": "Aplicativo Carteira de Trabalho Digital ou portal gov.br",
+    "fonte": "https://www.gov.br/trabalho-e-emprego",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 2,
+    "categoria": "Documentos",
+    "titulo": "Regularizar o CPF na Receita Federal",
+    "palavras_chave": ["cpf", "regularizar cpf", "situacao cadastral", "receita federal"],
+    "resposta": "A regularização do CPF pode ser feita de forma gratuita pelo site da Receita Federal ou em atendimento conveniado.",
+    "documentos": ["Documento de identidade com foto", "Título de eleitor", "Comprovante de residência"],
+    "onde": "Site da Receita Federal do Brasil",
+    "fonte": "https://www.gov.br/receitafederal",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 3,
+    "categoria": "Documentos",
+    "titulo": "Fazer o Título de Eleitor",
+    "palavras_chave": ["titulo de eleitor", "eleitor", "justica eleitoral", "tse"],
+    "resposta": "O alistamento eleitoral para novos votantes é feito online pelo portal do Tribunal Superior Eleitoral (TSE).",
+    "documentos": ["Documento oficial de identidade", "Comprovante de residência recente"],
+    "onde": "Site do TSE (Título Net) ou cartório eleitoral",
+    "fonte": "https://www.tse.jus.br",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 4,
+    "categoria": "Direitos Trabalhistas",
+    "titulo": "Entender o funcionamento do FGTS",
+    "palavras_chave": ["fgts", "fundo de garantia", "saque fgts", "conta vinculada"],
+    "resposta": "O FGTS é um depósito mensal feito pelo empregador em conta na Caixa Econômica Federal em nome do trabalhador.",
+    "documentos": ["Documento de identificação", "Número do PIS/PASEP"],
+    "onde": "Aplicativo FGTS ou agências da Caixa Econômica Federal",
+    "fonte": "https://www.caixa.gov.br/fgts",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 5,
+    "categoria": "Direitos Trabalhistas",
+    "titulo": "Regras de férias remuneradas",
+    "palavras_chave": ["ferias", "descanso", "periodo adquisitivo", "abono pecuniario"],
+    "resposta": "O trabalhador adquire direito a 30 dias de férias após cada período de 12 meses de trabalho na mesma empresa.",
+    "documentos": ["Carteira de Trabalho Digital"],
+    "onde": "Setor de Recursos Humanos da empresa",
+    "fonte": "https://www.gov.br/trabalho-e-emprego",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 6,
+    "categoria": "Direitos Trabalhistas",
+    "titulo": "Recebimento do 13º Salário",
+    "palavras_chave": ["13 salario", "decimo terceiro", "gratificacao natalina", "salario extra"],
+    "resposta": "O décimo terceiro salário é pago pelo empregador em duas parcelas: a primeira entre novembro e 30 de novembro, e a segunda até 20 de dezembro.",
+    "documentos": ["Demonstrativo de pagamento (Holerite)"],
+    "onde": "Empresa empregadora",
+    "fonte": "https://www.gov.br/trabalho-e-emprego",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 7,
+    "categoria": "Serviços Bancários",
+    "titulo": "Abrir uma Conta Salário",
+    "palavras_chave": ["conta salario", "banco", "receber salario", "portabilidade"],
+    "resposta": "A conta salário é aberta pela empresa para o pagamento do salário, sendo isenta de tarifas para saques e transferências básicas.",
+    "documentos": ["RG", "CPF", "Comprovante de residência", "Carta de encaminhamento da empresa"],
+    "onde": "Instituição financeira indicada pela empresa ou escolhida por portabilidade",
+    "fonte": "https://www.bcb.gov.br",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 8,
+    "categoria": "Serviços Bancários",
+    "titulo": "Cadastrar chaves PIX de forma segura",
+    "palavras_chave": ["pix", "chave pix", "transferencia", "banco central"],
+    "resposta": "O PIX permite transferências e pagamentos instantâneos cadastrando chaves como CPF, e-mail, telefone ou chave aleatória.",
+    "documentos": ["Aplicativo do banco com acesso liberado"],
+    "onde": "Aplicativo do seu banco no celular",
+    "fonte": "https://www.bcb.gov.br/estabilidadefinanceira/pix",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 9,
+    "categoria": "Documentos",
+    "titulo": "Emitir a Carteira de Identidade Nacional (CIN)",
+    "palavras_chave": ["cin", "rg", "carteira de identidade", "novo rg"],
+    "resposta": "A Nova Carteira de Identidade Nacional utiliza o CPF como número único de identificação em todo o país.",
+    "documentos": ["Certidão de nascimento ou casamento original", "CPF regularizado"],
+    "onde": "Postos de atendimento de identificação do seu estado (Poupatempo ou Instituto de Identificação)",
+    "fonte": "https://www.gov.br/identidade",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 10,
+    "categoria": "Direitos Trabalhistas",
+    "titulo": "Entender o contrato de Trabalho Intermitente",
+    "palavras_chave": ["trabalho intermitente", "contrato", "convocacao", "prestacao de servicos"],
+    "resposta": "No contrato intermitente, a prestação de serviços não é contínua, ocorrendo com alternância de períodos de prestação de serviços e de inatividade.",
+    "documentos": ["Carteira de Trabalho Digital"],
+    "onde": "Empresa contratante",
+    "fonte": "https://www.gov.br/trabalho-e-emprego",
+    "verificado_em": "2026-11-05"
+  }
+]
