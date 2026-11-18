@@ -3,9 +3,9 @@
 Projeto da Global Solution 2026.2 — Pensamento Computacional e Automação com Python (FIAP).
 
 ## Equipe
-- Integrante 1: **[PREENCHER NOME E RM]**
-- Integrante 2: **[PREENCHER NOME E RM OU REMOVER]**
-- Integrante 3: **[PREENCHER NOME E RM OU REMOVER]**
+- Integrante 1: Ryan Barreto Carlos Dias - RM: 574126
+- Integrante 2: Fernando Henrique Lembo - RM: 570228
+
 
 ## Público e problema
 **Público:** cidadãos em geral. **Problema:** informações sobre documentos, saúde, trabalho e direitos do consumidor estão dispersas em diferentes portais. O assistente orienta por texto livre ou categorias e apresenta fontes oficiais. Não substitui atendimento governamental.
