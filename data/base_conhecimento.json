@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "categoria": "Documentos",
+    "titulo": "Emitir a primeira via do CPF",
+    "palavras_chave": [
+      "cpf primeira via",
+      "inscricao cpf",
+      "fazer cpf",
+      "cadastro pessoa fisica"
+    ],
+    "resposta": "A inscrição no CPF pode ser solicitada pelos canais indicados pela Receita Federal. Consulte as condições e os documentos exigidos antes de iniciar.",
+    "documentos": [
+      "Documento de identificação; outros documentos podem ser exigidos conforme a situação"
+    ],
+    "onde": "Portal da Receita Federal e unidades de atendimento indicadas",
+    "fonte": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 2,
+    "categoria": "Documentos",
+    "titulo": "Consultar a Carteira de Identidade Nacional",
+    "palavras_chave": [
+      "carteira identidade nacional",
+      "nova identidade",
+      "cin",
+      "emitir identidade"
+    ],
+    "resposta": "A Carteira de Identidade Nacional é emitida pelos órgãos de identificação dos estados. Consulte o agendamento e os requisitos do seu estado.",
+    "documentos": [
+      "Certidão de nascimento ou casamento; consulte exigências locais"
+    ],
+    "onde": "Órgão de identificação do seu estado",
+    "fonte": "https://www.gov.br/gestao/pt-br/assuntos/identificacao-do-cidadao/carteira-de-identidade-nacional",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 3,
+    "categoria": "Documentos",
+    "titulo": "Solicitar a segunda via do título de eleitor",
+    "palavras_chave": [
+      "titulo eleitor",
+      "segunda via titulo",
+      "e titulo",
+      "titulo eleitoral"
+    ],
+    "resposta": "Consulte sua situação eleitoral e as opções de atendimento pelo portal da Justiça Eleitoral ou pelo aplicativo e-Título.",
+    "documentos": [
+      "Documento de identificação, conforme o serviço solicitado"
+    ],
+    "onde": "Portal do TSE, aplicativo e-Título ou cartório eleitoral",
+    "fonte": "https://www.tse.jus.br/servicos-eleitorais",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 4,
+    "categoria": "Saúde",
+    "titulo": "Consultar o Cartão Nacional de Saúde",
+    "palavras_chave": [
+      "cartao sus",
+      "cartao do sus",
+      "cns",
+      "meu sus digital"
+    ],
+    "resposta": "O Meu SUS Digital permite consultar informações de saúde, incluindo o número do Cartão Nacional de Saúde, quando disponível. Para orientações presenciais, procure uma UBS.",
+    "documentos": [
+      "Documento de identificação e CPF, conforme orientação da unidade"
+    ],
+    "onde": "Aplicativo Meu SUS Digital ou Unidade Básica de Saúde",
+    "fonte": "https://meususdigital.saude.gov.br/",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 5,
+    "categoria": "Saúde",
+    "titulo": "Encontrar uma Unidade Básica de Saúde",
+    "palavras_chave": [
+      "posto de saude",
+      "ubs perto",
+      "unidade basica",
+      "consulta sus"
+    ],
+    "resposta": "Procure a Secretaria Municipal de Saúde para identificar a UBS de referência e saber como funciona o atendimento na sua região.",
+    "documentos": [
+      "Documento de identificação e Cartão SUS, se disponível; confirme com a unidade"
+    ],
+    "onde": "Secretaria Municipal de Saúde ou UBS de referência",
+    "fonte": "https://www.gov.br/saude/pt-br",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 6,
+    "categoria": "Saúde",
+    "titulo": "Consultar informações sobre vacinação",
+    "palavras_chave": [
+      "vacina",
+      "vacinacao",
+      "calendario vacinal",
+      "carteira de vacina"
+    ],
+    "resposta": "Consulte o calendário nacional de vacinação e procure uma unidade de saúde para verificar quais vacinas são recomendadas para sua faixa etária.",
+    "documentos": [
+      "Documento de identificação e caderneta de vacinação, se disponível"
+    ],
+    "onde": "Unidade de saúde ou canais oficiais do Ministério da Saúde",
+    "fonte": "https://www.gov.br/saude/pt-br/vacinacao",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 7,
+    "categoria": "Trabalho",
+    "titulo": "Acessar a Carteira de Trabalho Digital",
+    "palavras_chave": [
+      "carteira de trabalho digital",
+      "ctps digital",
+      "carteira trabalho",
+      "contrato trabalho"
+    ],
+    "resposta": "A Carteira de Trabalho Digital pode ser acessada pelos canais oficiais do governo com uma conta gov.br.",
+    "documentos": [
+      "CPF e acesso à conta gov.br"
+    ],
+    "onde": "Aplicativo Carteira de Trabalho Digital ou portal gov.br",
+    "fonte": "https://www.gov.br/pt-br/temas/carteira-de-trabalho-digital",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 8,
+    "categoria": "Trabalho",
+    "titulo": "Consultar informações sobre seguro-desemprego",
+    "palavras_chave": [
+      "seguro desemprego",
+      "pedir seguro",
+      "beneficio desemprego",
+      "demissao"
+    ],
+    "resposta": "Confira as regras de elegibilidade, os prazos e como solicitar o seguro-desemprego nos canais oficiais.",
+    "documentos": [
+      "Requerimento do seguro-desemprego e documentos indicados pelo serviço"
+    ],
+    "onde": "Portal gov.br ou aplicativo Carteira de Trabalho Digital",
+    "fonte": "https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 9,
+    "categoria": "Trabalho",
+    "titulo": "Consultar vagas de emprego pelo SINE",
+    "palavras_chave": [
+      "vagas emprego",
+      "sine",
+      "procurar emprego",
+      "trabalho disponivel"
+    ],
+    "resposta": "Consulte as oportunidades e os serviços de intermediação de mão de obra disponíveis nos canais oficiais do SINE.",
+    "documentos": [
+      "Documentos solicitados pelo serviço; consulte antes do atendimento"
+    ],
+    "onde": "Rede SINE ou canais oficiais de emprego",
+    "fonte": "https://www.gov.br/trabalho-e-emprego/pt-br",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 10,
+    "categoria": "Consumidor",
+    "titulo": "Registrar reclamação de compra ou serviço",
+    "palavras_chave": [
+      "reclamacao compra",
+      "problema compra",
+      "consumidor gov",
+      "loja nao entregou"
+    ],
+    "resposta": "Tente resolver com a empresa e guarde os comprovantes. Se necessário, verifique se a empresa participa do Consumidor.gov.br ou procure o Procon.",
+    "documentos": [
+      "Comprovantes da compra e registros de atendimento, sem digitá-los neste assistente"
+    ],
+    "onde": "Consumidor.gov.br ou Procon",
+    "fonte": "https://www.consumidor.gov.br/",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 11,
+    "categoria": "Consumidor",
+    "titulo": "Entender o direito de arrependimento",
+    "palavras_chave": [
+      "direito arrependimento",
+      "devolver compra online",
+      "desistir compra",
+      "sete dias"
+    ],
+    "resposta": "Em compras realizadas fora do estabelecimento comercial, o Código de Defesa do Consumidor prevê, em regra, prazo de sete dias para desistência. Consulte as condições aplicáveis.",
+    "documentos": [
+      "Comprovante da compra e dados do pedido, apresentados apenas ao canal oficial"
+    ],
+    "onde": "Fornecedor ou Procon",
+    "fonte": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+    "verificado_em": "2026-11-18"
+  },
+  {
+    "id": 12,
+    "categoria": "Consumidor",
+    "titulo": "Buscar atendimento do Procon",
+    "palavras_chave": [
+      "procon",
+      "defesa consumidor",
+      "denunciar loja",
+      "direitos consumidor"
+    ],
+    "resposta": "O Procon orienta consumidores e pode receber reclamações. Consulte o órgão do seu estado ou município para saber os canais de atendimento.",
+    "documentos": [
+      "Comprovantes relacionados ao problema, conforme orientação do Procon"
+    ],
+    "onde": "Procon estadual ou municipal",
+    "fonte": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/consumidor",
+    "verificado_em": "2026-11-18"
+  }
+]
