@@ -1,5 +1,0 @@
-Nome do assistente: Citizen Assist AI
-Público atendido: Cidadãos em geral
-Integrantes e RM: [PREENCHER]
-Link do repositório GitHub: https://github.com/RyanBarreto/Assistente_Digital_de_Orientacao_ao_Cidadao
-Link do vídeo técnico no YouTube: [PREENCHER]
