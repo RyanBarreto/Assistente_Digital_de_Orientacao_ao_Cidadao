@@ -10,50 +10,44 @@ Projeto da Global Solution 2026.2 — Pensamento Computacional e Automação com
 ## Público e problema
 **Público:** cidadãos em geral. **Problema:** informações sobre documentos, saúde, trabalho e direitos do consumidor estão dispersas em diferentes portais. O assistente orienta por texto livre ou categorias e apresenta fontes oficiais. Não substitui atendimento governamental.
 
-## ODS relacionadas
-- ODS 3 — Saúde e Bem-Estar (acesso a orientações sobre saúde).
-- ODS 8 — Trabalho Decente e Crescimento Econômico (informações sobre trabalho).
-- ODS 16 — Paz, Justiça e Instituições Eficazes (acesso à informação e serviços).
 
+## Estrutura e orientação a objetos
+- orientacao.py — Orientacao: representa um registro da base, guarda seus atributos e apresenta a orientação com exibir().
+- base_conhecimento.py — BaseConhecimento: carrega o JSON, cria os objetos Orientacao, lista categorias e executa a busca por pontuação.
+- assistente.py — Assistente: recebe perguntas, permite navegação, registra atendimentos, calcula indicadores e exporta CSV.
+- main.py: inicializa as classes e executa o menu principal.
+A arquitetura usa composição: Assistente → BaseConhecimento → lista de Orientacao. Cada orientação vem de um dicionário JSON e a busca devolve tuplas (pontos, orientacao) ordenadas pela pontuação.
+Base de conhecimento
+A base data/base_conhecimento.json contém 12 orientações distribuídas por quatro categorias: Documentos, Saúde, Trabalho e Consumidor. Cada registro possui os campos id, categoria, titulo, palavras_chave, resposta, documentos, onde, fonte e verificado_em.
 
-Menu: 1 perguntar, 2 categorias, 3 indicadores, 4 exportar CSV, 0 sair. Para testar, digite `Como faço o cartão do SUS?`.
+As respostas são locais e só podem ser alteradas mediante edição da base JSON. Antes de apresentar uma orientação como atualizada, é necessário conferir o procedimento e a data de verificação no respectivo órgão oficial.
+Busca inteligente por regras
+A função normalizar() transforma o texto em minúsculas e remove acentos e pontuação. Para cada orientação:
+- Palavra-chave completa presente na pergunta: +3 pontos.
+- Palavra distinta da pergunta, com pelo menos quatro caracteres, presente no título: +1 ponto.
+O método buscar() devolve resultados ordenados por pontuação. A melhor resposta recebe confiança ALTA (6 pontos ou mais), MÉDIA (3 a 5 pontos) ou é considerada não encontrada (menos de 3 pontos). O assistente pode mostrar até duas orientações alternativas.
 
-## Arquitetura e orientação a objetos
-- `orientacao.py`: classe `Orientacao`, armazena um registro JSON e implementa `exibir()`.
-- `base_conhecimento.py`: classe `BaseConhecimento`, usa uma lista de objetos `Orientacao`; carrega JSON, lista categorias, pontua e busca.
-- `assistente.py`: classe `Assistente`, contém um objeto `BaseConhecimento` e histórico de atendimentos; pergunta, navega, registra, calcula indicadores e exporta CSV.
-- `main.py`: instancia as classes e mantém o menu.
+Exemplo: a pergunta Como faço o cartão do SUS? é normalizada e comparada com as palavras-chave e títulos das orientações. As correspondências somam pontos e determinam a confiança exibida.
+Atendimento, segurança e limitações
+O assistente trata opções inválidas sem encerrar inesperadamente o programa. Perguntas com @ ou sequências de oito ou mais dígitos, inclusive separadas por pontuação, são recusadas e não são registradas. O programa não solicita nome, CPF, telefone ou e-mail.
 
-**Composição:** `Assistente -> BaseConhecimento -> lista de Orientacao`. Os registros JSON são dicionários; os resultados de busca são tuplas `(pontos, orientacao)`.
+A verificação de dados pessoais é heurística, não sendo uma garantia completa contra a inclusão de informações sensíveis. Por isso, recomenda-se utilizar perguntas genéricas. Toda resposta apresenta a fonte, a data de verificação cadastrada e o aviso de que o assistente não é um canal oficial.
 
-## Busca inteligente por regras
-`normalizar()` converte para minúsculas, remove acentos e pontuação. Cada palavra-chave completa encontrada na pergunta vale **+3 pontos**; cada palavra distinta da pergunta com pelo menos quatro caracteres presente no título vale **+1 ponto**. A busca devolve tuplas ordenadas por pontuação decrescente. **6+ pontos:** confiança ALTA; **3–5:** MÉDIA; **menos de 3:** não encontrada. Exibe até duas alternativas. Não usa IA generativa nem consulta a internet durante a execução.
+Limitações: a base é estática, depende das palavras-chave cadastradas, não consulta sites em tempo real, não identifica automaticamente a localização do usuário e pode não cobrir procedimentos específicos de cada município ou estado.
+Histórico, indicadores e exportação
+O arquivo data/historico.json armazena a data, a origem do atendimento (pergunta ou categoria), a pergunta, o ID da orientação, se houve resposta, se ajudou, o número de tentativas e o tempo em segundos. O arquivo data/facilidade.json guarda avaliações anônimas de facilidade, de 1 a 5.
 
-## Segurança, transparência e limitações
-Perguntas contendo `@` ou uma sequência com oito ou mais dígitos, inclusive separados por pontuação, são recusadas e não registradas. O programa não solicita dados pessoais. A proteção é heurística e não garante detecção de todo dado sensível; por isso, os testes devem usar apenas perguntas genéricas. Cada orientação exibe fonte, data e aviso de não oficialidade. A base é estática, a busca depende de palavras-chave e serviços podem variar conforme localidade. Não há geolocalização nem atualização automática.
+Na opção 3 — Indicadores, o programa apresenta o total de atendimentos, o percentual de respostas encontradas, a taxa de respostas consideradas úteis, o tempo médio, as tentativas médias, a facilidade média e as dúvidas sem solução. Na opção 4 — Exportar CSV, os atendimentos são gravados em data/atendimentos.csv usando csv.DictWriter.
+Fontes oficiais de referência
+- Receita Federal — Meu CPF
+- Governo Federal — Carteira de Identidade Nacional
+- Tribunal Superior Eleitoral — Serviços eleitorais
+- Meu SUS Digital
+- Ministério da Saúde
+- Ministério do Trabalho e Emprego
+- Consumidor.gov.br
+- Código de Defesa do Consumidor — Lei nº 8.078/1990
+Testes com usuários
+O protocolo de validação prevê pelo menos três participantes externos à equipe e dez atendimentos no total. Os participantes devem testar perguntas em texto livre e navegação por categorias, avaliar se a resposta ajudou e atribuir uma nota de facilidade ao sair. Não devem fornecer dados pessoais.
 
-## Base e fontes
-12 orientações distribuídas em quatro categorias: Documentos, Saúde, Trabalho e Consumidor. Cada registro contém `id`, `categoria`, `titulo`, `palavras_chave`, `resposta`, `documentos`, `onde`, `fonte`, `verificado_em`.
-
-Fontes de referência: [Receita Federal](https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf), [Carteira de Identidade Nacional](https://www.gov.br/gestao/pt-br/assuntos/identificacao-do-cidadao/carteira-de-identidade-nacional), [TSE](https://www.tse.jus.br/servicos-eleitorais), [Meu SUS Digital](https://meususdigital.saude.gov.br/), [Ministério da Saúde](https://www.gov.br/saude/pt-br), [Ministério do Trabalho e Emprego](https://www.gov.br/trabalho-e-emprego/pt-br), [Consumidor.gov.br](https://www.consumidor.gov.br/), [Código de Defesa do Consumidor](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm).
-
-
-## Histórico e indicadores
-`data/historico.json` guarda data, origem, pergunta, ID, encontrou, ajudou, tentativas e tempo em segundos. `data/facilidade.json` guarda somente notas anônimas de 1 a 5. `data/atendimentos.csv` exporta o histórico. Indicadores: percentual encontrado, percentual que ajudou, tempo médio, tentativas médias, facilidade média e dúvidas sem solução. Não são coletados nomes dos participantes.
-
-## Testes com usuários — preencher com dados reais
-Realizar **no mínimo três participantes externos à equipe e dez atendimentos**. Não inserir nomes nem dados pessoais. Após os testes, preencher:
-
-| Indicador | Resultado real |
-|---|---|
-| Participantes externos | [PREENCHER] |
-| Atendimentos | [PREENCHER] |
-| Resposta encontrada | [PREENCHER]% |
-| Taxa de acerto (ajudou) | [PREENCHER]% |
-| Tempo médio | [PREENCHER] s |
-| Tentativas médias | [PREENCHER] |
-| Facilidade média | [PREENCHER]/5 |
-| Dúvidas sem solução | [PREENCHER] |
-
-**Melhoria após teste:** [DESCREVER UMA MUDANÇA REAL FEITA A PARTIR DO FEEDBACK].
-
+Situação: resultados de testes externos ainda não fornecidos para documentação. Os campos abaixo devem ser preenchidos exclusivamente com os resultados reais exibidos pelo programa, após os testes.
