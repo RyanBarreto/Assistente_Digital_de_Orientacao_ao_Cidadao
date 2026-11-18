@@ -1,6 +1,6 @@
 # Citizen Assist AI — Assistente Digital de Orientação ao Cidadão
 
-Projeto da Global Solution 2026.2 — Pensamento Computacional e Automação com Python (FIAP).
+Projeto da Global Solution 2026.2 — Pensamento Computacional e Automação com Python.
 
 ## Equipe
 - Integrante 1: Ryan Barreto Carlos Dias - RM: 574126
@@ -15,12 +15,6 @@ Projeto da Global Solution 2026.2 — Pensamento Computacional e Automação com
 - ODS 8 — Trabalho Decente e Crescimento Econômico (informações sobre trabalho).
 - ODS 16 — Paz, Justiça e Instituições Eficazes (acesso à informação e serviços).
 
-## Execução
-Requer Python 3.9+; não precisa instalar bibliotecas externas.
-
-```bash
-python main.py
-```
 
 Menu: 1 perguntar, 2 categorias, 3 indicadores, 4 exportar CSV, 0 sair. Para testar, digite `Como faço o cartão do SUS?`.
 
@@ -43,7 +37,6 @@ Perguntas contendo `@` ou uma sequência com oito ou mais dígitos, inclusive se
 
 Fontes de referência: [Receita Federal](https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf), [Carteira de Identidade Nacional](https://www.gov.br/gestao/pt-br/assuntos/identificacao-do-cidadao/carteira-de-identidade-nacional), [TSE](https://www.tse.jus.br/servicos-eleitorais), [Meu SUS Digital](https://meususdigital.saude.gov.br/), [Ministério da Saúde](https://www.gov.br/saude/pt-br), [Ministério do Trabalho e Emprego](https://www.gov.br/trabalho-e-emprego/pt-br), [Consumidor.gov.br](https://www.consumidor.gov.br/), [Código de Defesa do Consumidor](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm).
 
-**Revisão necessária antes da entrega:** os registros foram preparados em 18/11/2026, mas a equipe deve abrir cada URL, conferir os procedimentos e confirmar a data `verificado_em`. Não apresente a data como conferência humana já realizada sem realizar a checagem.
 
 ## Histórico e indicadores
 `data/historico.json` guarda data, origem, pergunta, ID, encontrou, ajudou, tentativas e tempo em segundos. `data/facilidade.json` guarda somente notas anônimas de 1 a 5. `data/atendimentos.csv` exporta o histórico. Indicadores: percentual encontrado, percentual que ajudou, tempo médio, tentativas médias, facilidade média e dúvidas sem solução. Não são coletados nomes dos participantes.
@@ -64,8 +57,3 @@ Realizar **no mínimo três participantes externos à equipe e dez atendimentos*
 
 **Melhoria após teste:** [DESCREVER UMA MUDANÇA REAL FEITA A PARTIR DO FEEDBACK].
 
-## Integrações com outras disciplinas
-Não há integrações externas nesta versão. O foco é a implementação exigida em Pensamento Computacional e Automação com Python.
-
-## Vídeo técnico
-**Link não listado:** [INSERIR LINK DO YOUTUBE]. Duração de 5 a 8 minutos, participação oral de todos os integrantes e demonstração do código executando. Consulte `ROTEIRO_VIDEO.md`.
